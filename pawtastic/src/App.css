@@ -7,5 +7,40 @@
   background-color: #eee;
   border-radius: 20px;
 }
+.switch2::after {
+position : relative;
+   display : inline-block;
+   margin: 2em;
+   width : 510px;
+   height : 40px;
+   background-color:white;
+}
 
+.switch3::after {
+  content: "0-25lbs 25-50lbs 50-100lbs 100+lbs";
+  display: block;
+  position: absolute;
+  text-align: center;
+  width: 60px;
+  height: 28px;
+  background: antiquewhite;
+  left: 1px;
+  top: 1px;
+  font-size: 12px;
+  word-spacing: 90px;
+  color: orange;
+  white-space: nowrap;
+  transition: all .6s;
+  white-space: nowrap;
+}
 
+.checkbox3:checked + .switch3::after {
+  left : 20px; 
+}
+.checkbox3:checked + .switch3 {
+  background-color: white;
+}
+
+.checkbox3{
+  display: none;
+}
