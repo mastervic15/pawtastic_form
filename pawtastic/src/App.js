@@ -38,10 +38,12 @@ export default class App extends Component {
             Birthday
             <input type="date" name ="birthday"/>
           </label>
+          
+          </div>
+      )
+    }
+  }
 
 
 
-
-export default App;
-
-
+// export default App;
